@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF4B63"
+    tools:context=".quizes.QuizActivity1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:background="@drawable/quiz_background1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="33dp"
+            android:src="@drawable/character2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="205dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/work_sans"
+            android:gravity="center"
+            android:text="Kendinizi Test Edin"
+            android:textColor="@color/White"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="185dp"
+        android:background="@drawable/quiz_background2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.788">
+
+        <ImageView
+
+            android:id="@+id/progressbarQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="51dp"
+            app:layout_constraintEnd_toStartOf="@+id/progressTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/progressbar1" />
+
+        <TextView
+            android:id="@+id/textquesiton"
+            android:layout_width="314dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="112dp"
+
+            android:layout_marginEnd="51dp"
+            android:fontFamily="@font/work_sans"
+            android:text="Son 4 gün içinde Ateşiniz 38 derece ve uzeri oldu mu?"
+            android:textColor="@color/White"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.656"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressTv" />
+
+        <Button
+            android:id="@+id/evetButton"
+            android:layout_width="117dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/custom_button"
+            android:text="Evet"
+            android:textColor="#0E3360"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/hayirButton" />
+
+        <Button
+            android:id="@+id/hayirButton"
+            android:layout_width="117dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/custom_button"
+            android:text="Hayır"
+            android:textColor="#0E3360"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/evetButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/progressTv"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="32dp"
+            android:elevation="55dp"
+            android:fontFamily="@font/work_sans"
+            android:text="1/4"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

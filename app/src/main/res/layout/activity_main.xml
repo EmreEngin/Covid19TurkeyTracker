@@ -1,0 +1,330 @@
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/White"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/covid_19_analiz"
+            android:fontFamily="@font/work_sans_semibold"
+            android:paddingTop="10dp"
+            android:textColor="@color/DarkBlue"
+            android:textSize="30sp"
+            android:paddingStart="30dp"
+            tools:ignore="RtlSymmetry" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="25dp"
+            app:cardBackgroundColor="#FF4B63"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="179dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/work_sans_semibold"
+                    android:gravity="center"
+                    android:text="@string/hemen_kendinizi_test_edin"
+                    android:textColor="@color/White"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="170dp"
+                    android:layout_height="151dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/character"
+                    android:contentDescription="@string/imageview1" />
+
+                <TextView
+                    android:layout_width="185dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/work_sans_light"
+                    android:gravity="center"
+                    android:text="@string/sa_l_n_z_bu_zamanda_ok_nemli_hemen_test_etmek_i_in_t_klay_n"
+                    android:textColor="@color/White"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.95"
+                    tools:ignore="HardcodedText" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:paddingTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/work_sans_semibold"
+                    android:text="@string/guncel_veriler"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/latest_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/blank_date"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/refresh_button"
+                    android:layout_width="40dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="28dp"
+                    android:background="@color/White"
+                    android:src="@drawable/refresh"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.484" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="108dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="14dp"
+                app:cardCornerRadius="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.52">
+
+
+                <ImageView
+                    android:id="@+id/imageViewCase"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="@string/selam"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:srcCompat="@drawable/ic_active" />
+
+                <TextView
+                    android:id="@+id/dailyInfected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="center"
+                    android:text="@string/_25"
+                    android:textColor="@color/LimeGreen"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/vaka_sayisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="center"
+                    android:text="@string/randomnumber"
+                    android:textColor="#007BFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="101dp"
+                    android:fontFamily="@font/work_sans_light"
+                    android:gravity="center"
+                    android:text="@string/vaka_say_s"
+                    android:textColor="#007BFF" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="108dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="284dp"
+                android:layout_marginEnd="19dp"
+                app:cardCornerRadius="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.514">
+
+
+                <ImageView
+                    android:id="@+id/imageViewDead"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="@string/selam"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:srcCompat="@drawable/ic_dead" />
+
+                <TextView
+                    android:id="@+id/dailyDeceased"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="center"
+                    android:text="+25"
+                    android:textColor="@color/Red"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/olum_sayisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/work_sans_semibold"
+                    android:gravity="center"
+                    android:text="@string/randomnumber"
+                    android:textColor="#FF3131"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="101dp"
+                    android:fontFamily="@font/work_sans_light"
+                    android:gravity="center"
+                    android:text="@string/deathNumber"
+                    android:textColor="#FF3131" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="108dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:cardCornerRadius="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cardView3"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.52">
+
+
+                <ImageView
+                    android:id="@+id/imageViewHealth"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="@string/selam"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:srcCompat="@drawable/ic_heart" />
+
+                <TextView
+                    android:id="@+id/dailyRecovered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="center"
+                    android:text="+25"
+                    android:textColor="@color/LimeGreen"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/iyilesen_sayisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/work_sans_semibold"
+                    android:gravity="center"
+                    android:text="@string/randomnumber"
+                    android:textColor="#21CF55"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="101dp"
+                    android:fontFamily="@font/work_sans_light"
+                    android:gravity="center"
+                    android:text="@string/healthNumber"
+                    android:textColor="#21CF55" />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+      <com.github.mikephil.charting.charts.LineChart
+          android:layout_width="match_parent"
+          android:layout_height="400dp"
+          android:layout_marginEnd="25dp"
+          android:id="@+id/line_chart"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/bar_chart"
+            android:layout_marginBottom="5dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

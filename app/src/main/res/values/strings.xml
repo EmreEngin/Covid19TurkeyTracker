@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Covid19</string>
+    <string name="covid_19_analiz">Covid 19 Analiz</string>
+    <string name="imageview1">ImageView1</string>
+    <string name="hemen_kendinizi_test_edin">Hemen Kendinizi Test Edin</string>
+    <string name="sa_l_n_z_bu_zamanda_ok_nemli_hemen_test_etmek_i_in_t_klay_n">Sağlınız bu zamanda çok önemli hemen test etmek için Tıklayın.</string>
+    <string name="guncel_veriler">Güncel Veriler</string>
+    <string name="blank_date">Latest Update : 12.12.12</string>
+    <string name="vaka_say_s">Vaka Sayısı</string>
+    <string name="selam">selam</string>
+    <string name="deathNumber">Ölüm Sayısı</string>
+    <string name="healthNumber">İyleşen Sayısı</string>
+    <string name="randomnumber"></string>
+    <string name="_25">+25</string>
+</resources>
