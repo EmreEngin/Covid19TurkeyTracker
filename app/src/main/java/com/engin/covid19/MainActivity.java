@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
 
                     List<Covidata> covidataList = response.body();
-                    List<Covidata> upToDate = covidataList.subList(6, 22);
+                    List<Covidata> upToDate = covidataList.subList(10, 23);
                     dailyDeceasedTv.setText("+"+ covidataList.get(0).getGunlukVefat().toString());
                     dailyInfectedTv.setText("+"+ covidataList.get(0).getGunlukVaka().toString());
                     dailyRecoveredTv.setText("+" +  covidataList.get(0).getGunlukIyilesen().toString());
